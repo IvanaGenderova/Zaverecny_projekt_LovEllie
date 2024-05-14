@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    
+    <!--Section logo -->
+<div>
+	<header class="header">
+        <img class="header__logo" src="/images/homepage/logo.svg" alt="header__logo">
+    </header>
+</div>
+        
+
+   <!--Menu-->
+   
+   <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/" class="menu__link">HOME</a></li>
+            <li class="menu__item"><a href="/shop/" class="menu__link">SHOP</a></li>
+            <li class="menu__item"><a href="/faq/" class="menu__link">FAQ</a></li>
+            <li class="menu__item"><a href="/blog/" class="menu__link">BLOG</a></li>
+            <li class="menu__item"><a href="/contact/" class="menu__link">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <main class="page">
+
+    {{ content | safe }}
+           
+    </main>
+
+<!--Footer-->
+<footer class="footer">
+    <p>© 2024, LovEllie</p>
+</footer>
+
+    
+</body>
+</html>
